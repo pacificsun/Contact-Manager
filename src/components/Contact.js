@@ -3,20 +3,20 @@ import PropTypes from "prop-types";
 
 class Contact extends Component {
   render() {
-    const { name, email, address } = this.props;
+    const { name, email, address } = this.props.contact;
     return (
       <div className="card card-body mb-3">
         <h4>{name}</h4>
         <ul className="list-group">
-          <li className="list-group-item">{email}</li>
-          <li className="list-group-item">{address}</li>
+          <li className="list-group-item">Email: {email}</li>
+          <li className="list-group-item">Address: {address}</li>
         </ul>
       </div>
     );
   }
 }
-// Contact.prototype ={
-//     name:
-// }
+Contact.propTypes = {
+  contact: PropTypes.object.isRequired
+};
 
 export default Contact;
