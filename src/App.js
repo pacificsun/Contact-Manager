@@ -9,11 +9,18 @@ function App() {
   return (
     <div>
       <Header branding="Contact Manager" />
-      <Contact
-        name="SurajThapa"
-        email="stsurajst@gmail.com"
-        address="kathmnadu"
-      />
+      <div className="container">
+        <Contact
+          name="Suraj Mager "
+          email="stsurajst@gmail.com"
+          address="kathmnadu"
+        />
+        <Contact
+          name="kiran Magar"
+          email="kiran@gmail.com"
+          address="Lalitpur"
+        />
+      </div>
     </div>
   );
 }
